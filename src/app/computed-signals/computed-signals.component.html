@@ -2,5 +2,11 @@
 
 <span>Count result: {{count()}}</span>
 
-<button (click)="expensiveCount()">expensive</button>
-<button (click)="increment()">increment</button>
+<div style="display: flex; flex-direction:column; gap: 1rem">
+  <button (click)="doubleNumbers()">double</button>
+  <button (click)="expensiveCount()">expensive</button>
+  <button (click)="increment()">increment</button>
+  <button (click)="getContionalCount()">click here to ge the conditional count</button>
+
+  <button (click)="updateShowCount()">update show count</button>
+</div>
