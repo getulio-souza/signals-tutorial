@@ -7,6 +7,7 @@ import { CounterComponent } from './counter/counter.component';
 import { ComputedSignalsComponent } from './computed-signals/computed-signals.component';
 import { EffectsComponent } from './effects/effects.component';
 import { EqualityFunctionsComponent } from './equality-functions/equality-functions.component';
+import { UntrackedDependenciesComponent } from './untracked-dependencies/untracked-dependencies.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EqualityFunctionsComponent } from './equality-functions/equality-functi
     CounterComponent,
     ComputedSignalsComponent,
     EffectsComponent,
-    EqualityFunctionsComponent
+    EqualityFunctionsComponent,
+    UntrackedDependenciesComponent
   ],
   imports: [
     BrowserModule,
