@@ -8,6 +8,8 @@ import { ComputedSignalsComponent } from './computed-signals/computed-signals.co
 import { EffectsComponent } from './effects/effects.component';
 import { EqualityFunctionsComponent } from './equality-functions/equality-functions.component';
 import { UntrackedDependenciesComponent } from './untracked-dependencies/untracked-dependencies.component';
+import { CleanupSignalsComponent } from './cleanup-signals/cleanup-signals.component';
+import { SignalsRxjsComponent } from './signals-rxjs/signals-rxjs.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { UntrackedDependenciesComponent } from './untracked-dependencies/untrack
     ComputedSignalsComponent,
     EffectsComponent,
     EqualityFunctionsComponent,
-    UntrackedDependenciesComponent
+    UntrackedDependenciesComponent,
+    CleanupSignalsComponent,
+    SignalsRxjsComponent
   ],
   imports: [
     BrowserModule,
