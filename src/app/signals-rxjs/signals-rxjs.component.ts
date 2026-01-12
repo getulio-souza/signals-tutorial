@@ -11,7 +11,7 @@ export class SignalsRxjsComponent implements OnInit, OnDestroy{
   counterObservable = interval(10000);
   private subscription!: Subscription
 
-  counter = toSignal(this.counterObservable, { initialValue: 0 }, { manualCleanup: true });
+  counter = toSignal(this.counterObservable, { initialValue: 0 });
 
   ngOnInit(): void {
     this.subscription = this.counterObservable.subscribe()

@@ -10,6 +10,7 @@ import { EqualityFunctionsComponent } from './equality-functions/equality-functi
 import { UntrackedDependenciesComponent } from './untracked-dependencies/untracked-dependencies.component';
 import { CleanupSignalsComponent } from './cleanup-signals/cleanup-signals.component';
 import { SignalsRxjsComponent } from './signals-rxjs/signals-rxjs.component';
+import { ToObservableComponent } from './to-observable/to-observable.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SignalsRxjsComponent } from './signals-rxjs/signals-rxjs.component';
     EqualityFunctionsComponent,
     UntrackedDependenciesComponent,
     CleanupSignalsComponent,
-    SignalsRxjsComponent
+    SignalsRxjsComponent,
+    ToObservableComponent
   ],
   imports: [
     BrowserModule,
