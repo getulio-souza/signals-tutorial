@@ -14,4 +14,8 @@ export class AppComponent {
     console.log('called toogle in app component!')
     this.componentToogle.update((value) => !value)
   }
+
+  onNameChange(value: string) {
+    console.log(value)
+  }
 }

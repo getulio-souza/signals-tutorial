@@ -11,7 +11,11 @@
 
     <!-- <app-signals-rxjs></app-signals-rxjs> -->
 
-    <app-to-observable></app-to-observable>
+    <!-- <app-to-observable></app-to-observable> -->
+
+    <app-output-from-observable
+    (nameChange)="onNameChange($event)"
+    ></app-output-from-observable>
 
     <!-- <button (click)="onToogleComponent()">toogle</button> -->
 

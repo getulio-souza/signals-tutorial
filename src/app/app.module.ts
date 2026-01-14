@@ -11,6 +11,7 @@ import { UntrackedDependenciesComponent } from './untracked-dependencies/untrack
 import { CleanupSignalsComponent } from './cleanup-signals/cleanup-signals.component';
 import { SignalsRxjsComponent } from './signals-rxjs/signals-rxjs.component';
 import { ToObservableComponent } from './to-observable/to-observable.component';
+import { OutputFromObservableComponent } from './output-from-observable/output-from-observable.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ToObservableComponent } from './to-observable/to-observable.component';
     UntrackedDependenciesComponent,
     CleanupSignalsComponent,
     SignalsRxjsComponent,
-    ToObservableComponent
+    ToObservableComponent,
+    OutputFromObservableComponent
   ],
   imports: [
     BrowserModule,
