@@ -12,6 +12,7 @@ import { CleanupSignalsComponent } from './cleanup-signals/cleanup-signals.compo
 import { SignalsRxjsComponent } from './signals-rxjs/signals-rxjs.component';
 import { ToObservableComponent } from './to-observable/to-observable.component';
 import { OutputFromObservableComponent } from './output-from-observable/output-from-observable.component';
+import { SignalsInputComponent } from './signals-input/signals-input.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { OutputFromObservableComponent } from './output-from-observable/output-f
     CleanupSignalsComponent,
     SignalsRxjsComponent,
     ToObservableComponent,
-    OutputFromObservableComponent
+    OutputFromObservableComponent,
+    SignalsInputComponent
   ],
   imports: [
     BrowserModule,
