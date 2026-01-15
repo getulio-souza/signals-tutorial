@@ -8,5 +8,5 @@ import { Component, input } from '@angular/core';
 export class SignalsInputComponent {
   firstName = input<string>()
   age = input(0)
-  lastName = input.required<string>()
+  lastName = input<string>()
 }
