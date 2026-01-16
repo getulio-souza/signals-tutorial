@@ -8,6 +8,10 @@ import { Component, signal } from '@angular/core';
 export class AppComponent {
   title = 'signals-tutorial';
 
+  firstName: string = 'Getulio'
+  lastName: string = 'Souza'
+  age: number = 34
+
   componentToogle = signal(true)
 
   onToogleComponent() {

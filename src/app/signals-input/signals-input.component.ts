@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, effect, input } from '@angular/core';
 
 @Component({
   selector: 'app-signals-input',
@@ -8,5 +8,14 @@ import { Component, input } from '@angular/core';
 export class SignalsInputComponent {
   firstName = input<string>()
   age = input(0)
-  lastName = input<string>()
+  lastName = input.required<string>()
+
+
+  constructor(){
+    effect(()=> {
+      console.log(this.firstName())
+      console.log(this.lastName())
+      console.log(this.age())
+    })
+  }
 }
