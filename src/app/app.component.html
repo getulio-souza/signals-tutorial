@@ -17,11 +17,23 @@
     (nameChange)="onNameChange($event)"
     ></app-output-from-observable> -->
 
-    <app-signals-input
+    <!-- <app-signals-input
     [firstName]="firstName"
     [lastName]="lastName"
     [age]="age"
-    ></app-signals-input>
+    ></app-signals-input> -->
+
+    <!-- <app-signals-input-extra
+    [disabled]="'kfjds'"
+    ></app-signals-input-extra> -->
+
+    <app-two-way-data-binding-signal
+    [checked]="parentChecked"
+    [disabled]="isDisabled"
+    (checkedChange)="handleCheckedChange($event)"
+    ></app-two-way-data-binding-signal>
+    <br>
+    <span>checked state in parent: {{parentChecked}}</span>
 
     <!-- <button (click)="onToogleComponent()">toogle</button> -->
 

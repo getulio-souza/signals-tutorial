@@ -12,6 +12,10 @@ export class AppComponent {
   lastName: string = 'Souza'
   age: number = 34
 
+  parentChecked: boolean = false;
+  isDisabled: boolean = false;
+  checkedChange: any;
+
   componentToogle = signal(true)
 
   onToogleComponent() {
@@ -21,5 +25,9 @@ export class AppComponent {
 
   onNameChange(value: string) {
     console.log(value)
+  }
+
+  handleCheckedChange(newCheckedValue: boolean){
+    this.parentChecked = newCheckedValue
   }
 }

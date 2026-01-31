@@ -13,6 +13,8 @@ import { SignalsRxjsComponent } from './signals-rxjs/signals-rxjs.component';
 import { ToObservableComponent } from './to-observable/to-observable.component';
 import { OutputFromObservableComponent } from './output-from-observable/output-from-observable.component';
 import { SignalsInputComponent } from './signals-input/signals-input.component';
+import { SignalsInputExtraComponent } from "./signals-input-extra/signals-input-extra.component";
+import { TwoWayDataBindingSignalComponent } from "./two-way-data-binding-signal/two-way-data-binding-signal.component";
 
 @NgModule({
   declarations: [
@@ -30,8 +32,10 @@ import { SignalsInputComponent } from './signals-input/signals-input.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    SignalsInputExtraComponent,
+    TwoWayDataBindingSignalComponent
+],
   providers: [],
   bootstrap: [AppComponent]
 })
